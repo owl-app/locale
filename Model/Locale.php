@@ -36,6 +36,9 @@ class Locale implements LocaleInterface
         return (string) $this->getName();
     }
 
+    /**
+     * @return int
+     */
     public function getId()
     {
         return $this->id;
@@ -51,6 +54,9 @@ class Locale implements LocaleInterface
         $this->code = $code;
     }
 
+    /**
+     * @return string
+     */
     public function getName(?string $locale = null): ?string
     {
         return Locales::getName($this->getCode(), $locale);

@@ -18,5 +18,5 @@ interface LocaleContextInterface
     /**
      * @throws LocaleNotFoundException
      */
-    public function getLocaleCode(): string;
+    public function getLocaleCode():? string;
 }

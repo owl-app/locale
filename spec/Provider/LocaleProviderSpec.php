@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace spec\Owl\Component\Locale\Provider;
 
-use PhpSpec\ObjectBehavior;
 use Owl\Component\Locale\Model\LocaleInterface;
 use Owl\Component\Locale\Provider\LocaleProviderInterface;
+use PhpSpec\ObjectBehavior;
 use Sylius\Component\Resource\Repository\RepositoryInterface;
 
 final class LocaleProviderSpec extends ObjectBehavior

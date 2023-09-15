@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace spec\Owl\Component\Locale\Model;
 
-use PhpSpec\ObjectBehavior;
 use Owl\Component\Locale\Model\LocaleInterface;
+use PhpSpec\ObjectBehavior;
 use Sylius\Component\Resource\Model\TimestampableInterface;
 
 final class LocaleSpec extends ObjectBehavior

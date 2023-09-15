@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace spec\Owl\Component\Locale\Context;
 
-use PhpSpec\ObjectBehavior;
 use Owl\Component\Locale\Context\LocaleContextInterface;
+use PhpSpec\ObjectBehavior;
 
 final class ImmutableLocaleContextSpec extends ObjectBehavior
 {

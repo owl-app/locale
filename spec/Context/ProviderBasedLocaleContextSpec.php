@@ -13,10 +13,10 @@ declare(strict_types=1);
 
 namespace spec\Owl\Component\Locale\Context;
 
-use PhpSpec\ObjectBehavior;
 use Owl\Component\Locale\Context\LocaleContextInterface;
 use Owl\Component\Locale\Context\LocaleNotFoundException;
 use Owl\Component\Locale\Provider\LocaleProviderInterface;
+use PhpSpec\ObjectBehavior;
 
 final class ProviderBasedLocaleContextSpec extends ObjectBehavior
 {
@@ -39,7 +39,7 @@ final class ProviderBasedLocaleContextSpec extends ObjectBehavior
     }
 
     function it_throws_a_locale_not_found_exception_if_default_locale_is_not_available(
-        LocaleProviderInterface $localeProvider
+        LocaleProviderInterface $localeProvider,
     ): void {
         $localeProvider->getAvailableLocalesCodes()->willReturn(['es_ES', 'en_US']);
         $localeProvider->getDefaultLocaleCode()->willReturn('pl_PL');

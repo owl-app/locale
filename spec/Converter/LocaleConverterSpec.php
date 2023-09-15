@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace spec\Owl\Component\Locale\Converter;
 
-use PhpSpec\ObjectBehavior;
 use Owl\Component\Locale\Converter\LocaleConverterInterface;
+use PhpSpec\ObjectBehavior;
 
 final class LocaleConverterSpec extends ObjectBehavior
 {
